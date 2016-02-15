@@ -1,0 +1,32 @@
+{
+  "name": "sapling-challenge",
+  "private": true,
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jewelsjacobs/sapling-challenge.git"
+  },
+  "description": "Excercise for Sapling Learning",
+  "engines": {
+    "node": ">=5.0 <6",
+    "npm": ">=3.3 <4"
+  },
+  "scripts": {
+    "bundle": "browserify src/app.js --extension .jsx -t babelify > build/bundle.js",
+    "watch": "watchify src/app.js -v --extension .jsx -t babelify -o build/bundle.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "babel": "5.2.15",
+    "baconjs": "0.7.53",
+    "ramda": "^0.13.0",
+    "react": "0.13.2"
+  },
+  "devDependencies": {
+    "babelify": "6.0.2",
+    "browserify": "10.1.0",
+    "less": "2.5.0",
+    "watchify": "3.2.1"
+  },
+  "author": "Julia Jacobs <jjacobs2000@me.com> (http://jjacobs2000.myportfolio.com/)"
+}

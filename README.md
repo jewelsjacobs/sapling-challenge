@@ -1,4 +1,4 @@
-# [Sapling Coding Challenge](https://docs.google.com/document/d/17c5aBpmEHOUYQNfC8vUfoEKqsD3zybKVbWtNc9ncTB0/edit)
+# [Sapling Coding Challenge](docs/CHALLENGE.md)
 
 ## Includes:
 

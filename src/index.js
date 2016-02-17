@@ -4,7 +4,7 @@ let Cycle = require('cycle-react');
 let todoIntent = require('./todo-intent');
 let model = require('./todo-model');
 let view = require('./todo-view');
-let localStorageSink = require('./local-storage-sink');
+let localStorageSink = require('./api-utils/local-storage-sink');
 let source = require('./todo-source');
 import './style.css';
 

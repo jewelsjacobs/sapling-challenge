@@ -17,16 +17,21 @@
   },
   "license": "ISC",
   "dependencies": {
-    "babel": "5.2.15",
-    "baconjs": "0.7.53",
-    "ramda": "^0.13.0",
-    "react": "0.13.2"
+    "babel": "6.5.2",
+    "baconjs": "0.7.83",
+    "bootstrap": "^3.3.6",
+    "newforms": "^0.13.2",
+    "newforms-bootstrap": "^2.0.0",
+    "ramda": "^0.19.1",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-star-rating": "^1.4.2"
   },
   "devDependencies": {
-    "babelify": "6.0.2",
-    "browserify": "10.1.0",
-    "less": "2.5.0",
-    "watchify": "3.2.1"
+    "babelify": "7.2.0",
+    "browserify": "13.0.0",
+    "less": "2.6.0",
+    "watchify": "3.7.0"
   },
   "author": "Julia Jacobs <jjacobs2000@me.com> (http://jjacobs2000.myportfolio.com/)"
 }

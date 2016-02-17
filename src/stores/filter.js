@@ -1,9 +1,7 @@
-const Bacon      = require('baconjs'),
-      Dispatcher = require('./dispatcher');
-
+import * as Dispatcher from './dispatcher'
 const d = new Dispatcher();
 
-module.exports = {
+export default {
   toProperty: function(initialFilter) {
     return d.stream('reset').scan(initialFilter, (_, newFilter) => newFilter)
   },
@@ -12,4 +10,4 @@ module.exports = {
     window.location.hash = newFilter;
     d.push('reset', newFilter)
   }
-};
+}

@@ -1,6 +1,6 @@
-const Bacon = require('baconjs');
+import Bacon from 'baconjs'
 
-module.exports = function() {
+export default function() {
   const busCache = {};
 
   this.stream = function(name) {
@@ -18,4 +18,4 @@ module.exports = function() {
   function bus(name) {
     return busCache[name] = busCache[name] || new Bacon.Bus()
   }
-};
+}

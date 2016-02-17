@@ -3,18 +3,25 @@ var webpack = require('webpack');
 
 module.exports = {
     devtool: 'eval',
-    entry: [
-        'webpack-dev-server/client?http://localhost:3000',
-        'webpack/hot/only-dev-server',
-        './src/index'
-    ],
+    entry: {
+        app: [
+            'webpack-dev-server/client?http://localhost:3000',
+            'webpack/hot/only-dev-server',
+            './src/index'
+        ]
+    },
     output: {
-        path: path.join(__dirname, 'dist'),
-        filename: 'bundle.js',
-        publicPath: '/static/'
+        filename: '[name].js',
+        path: path.join(__dirname, './build'),
+        publicPath: '/build/'
+    },
+    resolve: {
+        extensions: ['', '.js', '.jsx'],
+        modulesDirectories: ['src', 'node_modules']
     },
     plugins: [
-        new webpack.HotModuleReplacementPlugin()
+        new webpack.HotModuleReplacementPlugin(),
+        new webpack.NoErrorsPlugin()
     ],
     module: {
         loaders: [{
@@ -25,6 +32,10 @@ module.exports = {
         {
             test: /\.less$/,
             loader: 'style!css!less'
+        },
+        {
+            test: /\.css$/,
+            loader: 'style!css'
         },
         {
             test: /\.woff(2)?(\?v=\d+\.\d+\.\d+)?$/,

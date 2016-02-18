@@ -52,7 +52,7 @@ npm run lint // start eslint
 npm run build // uses webpack production configuration
 ```
 
-## ALL I really have done so far:
+## All I really have done so far:
 
 - [A component based ToDo app boilerplate](https://github.com/jewelsjacobs/sapling-challenge/tree/boilerplate)
 - A form that saves data to localstorage

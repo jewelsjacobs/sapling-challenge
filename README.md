@@ -22,7 +22,7 @@ You can learn more about this pattern by watching these awesome vids from the cr
 ## Installation
 
 ```javascript
-npm install //install dependencies
+npm install // install dependencies
 ```
 
 ## Usage
@@ -30,31 +30,30 @@ npm install //install dependencies
 ### Development
 
 ```javascript
-npm start //start webpack-dev-server with react-hot-loader and babel ES6 / jsx compiler
+npm start // start webpack-dev-server with react-hot-loader and babel ES6 / jsx compiler
 ```
 
 ### Run Tests
 Open another terminal tab and then for BDD + TDD:
 
 ```javascript 
-npm test //start testem + tape
+npm test // start testem + tape
 ```
 
 For linting:
 
 ```javascript 
-npm run lint //start eslint
+npm run lint // start eslint
 ```
 
 ### Build
 
 ```javascript 
-npm run build //uses webpack production configuration
+npm run build // uses webpack production configuration
 ```
 
-## TODO (if I wasn't trying to get this done ASAP)
+## ALL I really have done so far:
 
-- Actually write Tests
-- Cool UI components
-- Cool CSS transitions
-- API documentation
+- [A component based ToDo app boilerplate](https://github.com/jewelsjacobs/sapling-challenge/tree/boilerplate)
+- A form that saves data to localstorage
+- Possible architecture to interact with multiple datastores with an example for working with firebase (look in `/src/api` directory)
